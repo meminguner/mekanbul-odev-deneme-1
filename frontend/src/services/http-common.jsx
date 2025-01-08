@@ -1,8 +1,11 @@
 import axios from "axios";
-export default axios.create({
+
+const instance = axios.create({
   baseURL: "https://mekanbul-odev-deneme-1-backend.vercel.app/api",
   headers: {
-    Accept: "application/json",
-    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-  },
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  }
 });
+
+export default instance;
